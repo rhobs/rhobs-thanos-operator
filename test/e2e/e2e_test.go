@@ -72,7 +72,7 @@ var _ = Describe("controller", Ordered, func() {
 
 	BeforeAll(func() {
 		logf.SetLogger(zap.New(zap.WriteTo(GinkgoWriter), zap.UseDevMode(true)))
-		By("installing prometheus operator")
+		By("Test installing prometheus operator")
 		Expect(utils.InstallPrometheusOperator()).To(Succeed())
 
 		By("installing the cert-manager")
