@@ -124,7 +124,7 @@ var _ = Describe("controller", Ordered, func() {
 	})
 
 	AfterAll(func() {
-		By("uninstalling the Prometheus manager bundle")
+		By(" Test uninstalling the Prometheus manager bundle")
 		utils.UninstallPrometheusOperator()
 
 		By("uninstalling the cert-manager bundle")
